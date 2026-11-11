@@ -1,0 +1,42 @@
+{
+  "repository": "https://github.com/theafrazkhan/SQE-Assignment-2",
+  "issues": [
+    {
+      "id": "BUG-01",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/issues/1"
+    },
+    {
+      "id": "BUG-02",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/issues/2"
+    },
+    {
+      "id": "BUG-03",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/issues/3"
+    },
+    {
+      "id": "BUG-04",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/issues/4"
+    },
+    {
+      "id": "BUG-05",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/issues/5"
+    }
+  ],
+  "pull_requests": [
+    {
+      "branch": "blackbox-testing",
+      "base": "main",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/pull/6"
+    },
+    {
+      "branch": "whitebox-testing",
+      "base": "blackbox-testing",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/pull/7"
+    },
+    {
+      "branch": "defect-fixes",
+      "base": "whitebox-testing",
+      "url": "https://github.com/theafrazkhan/SQE-Assignment-2/pull/8"
+    }
+  ]
+}
