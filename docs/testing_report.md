@@ -78,7 +78,7 @@ Expected: True. Actual in the starter: False.
 
 Failed test: C13. Fix: Change the total comparison from <18 to <=18. Regression IDs: C08, C13, D22. All now pass.
 
-Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/1. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.
+Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/1. Status: corrected and regression-tested; GitHub issue CLOSED.
 
 ### BUG-02: Only some prerequisites incorrectly allow registration
 
@@ -88,7 +88,7 @@ Expected: False. Actual in the starter: True.
 
 Failed test: P03. Fix: Check required.issubset(completed). Regression IDs: P03, D21. All now pass.
 
-Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/2. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.
+Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/2. Status: corrected and regression-tested; GitHub issue CLOSED.
 
 ### BUG-03: Positive dues up to Rs. 1000 do not block registration
 
@@ -98,7 +98,7 @@ Expected: DUES_BLOCK. Actual in the starter: REGISTERED.
 
 Failed test: D02. Fix: Change the dues threshold from >1000 to >0. Regression IDs: D02, D03, D09, S04. All now pass.
 
-Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/3. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.
+Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/3. Status: corrected and regression-tested; GitHub issue CLOSED.
 
 ### BUG-04: A full course is registered instead of waitlisted
 
@@ -108,7 +108,7 @@ Expected: WAITLISTED. Actual in the starter: REGISTERED.
 
 Failed test: D08. Fix: Use enrolled == capacity; validation already excludes over-capacity states. Regression IDs: D08, D15, S02, S03. All now pass.
 
-Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/4. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.
+Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/4. Status: corrected and regression-tested; GitHub issue CLOSED.
 
 ### BUG-05: Withdrawal does not reduce course enrollment
 
@@ -118,7 +118,7 @@ Expected: True; course removed, credits=3, enrolled=0. Actual in the starter: Tr
 
 Failed test: S10. Fix: Subtract one from course.enrolled on successful withdrawal. Regression IDs: S10. All now pass.
 
-Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/5. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.
+Issue: https://github.com/theafrazkhan/SQE-Assignment-2/issues/5. Status: corrected and regression-tested; GitHub issue CLOSED.
 
 ## 6. CFG, paths and manual condition analysis
 
@@ -264,10 +264,24 @@ Repository: https://github.com/theafrazkhan/SQE-Assignment-2 (private).
 - whitebox-testing (base at creation: blackbox-testing): https://github.com/theafrazkhan/SQE-Assignment-2/pull/7
 - defect-fixes (base at creation: whitebox-testing): https://github.com/theafrazkhan/SQE-Assignment-2/pull/8
 
+All three PRs are merged; all five defect issues are closed. Peer review remains pending for this solo submission.
+
 The Actions workflow runs on push and PR, installs requirements.txt, runs pytest
 with branch coverage, and uploads JUnit/XML/HTML artifacts even if tests fail.
 No continue-on-error, xfail or skipped defects are used to hide the initial bugs.
 Actual GitHub run links and conclusions are recorded below and in github_runs.json.
+
+- main: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078551302
+
+- defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078489723
+
+- defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078484603
+
+- defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078294727
+
+- defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078286823
+
+- main: failure - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078230050
 
 - defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078017623
 

@@ -99,9 +99,11 @@ only line 59 and edge 58->59 missing; the final regression has no gaps.
 ## 5. Confirmed defects and fixes
 
 '''
+issue_states = json.loads((DOCS/'evidence/github-issue-state.json').read_text()) if (DOCS/'evidence/github-issue-state.json').exists() else []
 for defect in json.loads((DOCS/'defects.json').read_text()):
     url=next((x['url'] for x in links['issues'] if x['id']==defect['id']),'Publication pending')
-    text+=f"### {defect['id']}: {defect['title']}\n\nRequirement: {defect['requirement']}. Reproduce: {defect['steps']}\n\nExpected: {defect['expected']}. Actual in the starter: {defect['actual']}.\n\nFailed test: {defect['test']}. Fix: {defect['fix']} Regression IDs: {', '.join(defect['tests'])}. All now pass.\n\nIssue: {url}. Status: corrected and regression-tested; see GitHub issue/PR state for merge status.\n\n"
+    state = next((x['state'] for x in issue_states if x['url']==url), 'not collected')
+    text+=f"### {defect['id']}: {defect['title']}\n\nRequirement: {defect['requirement']}. Reproduce: {defect['steps']}\n\nExpected: {defect['expected']}. Actual in the starter: {defect['actual']}.\n\nFailed test: {defect['test']}. Fix: {defect['fix']} Regression IDs: {', '.join(defect['tests'])}. All now pass.\n\nIssue: {url}. Status: corrected and regression-tested; GitHub issue {state}.\n\n"
 text+='''## 6. CFG, paths and manual condition analysis
 
 The following analysis uses original starter line numbers, retained in
@@ -112,6 +114,7 @@ text+='''\n## 7. GitHub collaboration and CI evidence\n\n'''
 text+='Repository: '+links['repository']+' (private).\n\n'
 for pr in links['pull_requests']:
     text+=f"- {pr['branch']} (base at creation: {pr['base']}): {pr['url']}\n"
+text+='\nAll three PRs are merged; all five defect issues are closed. Peer review remains pending for this solo submission.\n'
 text+='''
 The Actions workflow runs on push and PR, installs requirements.txt, runs pytest
 with branch coverage, and uploads JUnit/XML/HTML artifacts even if tests fail.

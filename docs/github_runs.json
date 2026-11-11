@@ -1,6 +1,66 @@
 [
   {
     "conclusion": "success",
+    "createdAt": "2026-11-11T18:31:17Z",
+    "databaseId": 43078551302,
+    "event": "push",
+    "headBranch": "main",
+    "headSha": "d6a7f6c001503119a8cbc34f91e6646bdb563aaf",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078551302"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-11-11T18:30:54Z",
+    "databaseId": 43078489723,
+    "event": "pull_request",
+    "headBranch": "defect-fixes",
+    "headSha": "3b5df93989cac057fc9b3beee2be74a2dc34e48a",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078489723"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-11-11T18:30:52Z",
+    "databaseId": 43078484603,
+    "event": "push",
+    "headBranch": "defect-fixes",
+    "headSha": "3b5df93989cac057fc9b3beee2be74a2dc34e48a",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078484603"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-11-11T18:29:44Z",
+    "databaseId": 43078294727,
+    "event": "pull_request",
+    "headBranch": "defect-fixes",
+    "headSha": "2d4f04272d3a1216d4a1a38a3639837ba7ee46cf",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078294727"
+  },
+  {
+    "conclusion": "success",
+    "createdAt": "2026-11-11T18:29:40Z",
+    "databaseId": 43078286823,
+    "event": "push",
+    "headBranch": "defect-fixes",
+    "headSha": "2d4f04272d3a1216d4a1a38a3639837ba7ee46cf",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078286823"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-11-11T18:29:18Z",
+    "databaseId": 43078230050,
+    "event": "push",
+    "headBranch": "main",
+    "headSha": "5119316a4076fd4c99ee700f51cdaf23d072cd2e",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078230050"
+  },
+  {
+    "conclusion": "success",
     "createdAt": "2026-11-11T18:27:55Z",
     "databaseId": 43078017623,
     "event": "workflow_dispatch",

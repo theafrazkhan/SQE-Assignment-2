@@ -11,7 +11,7 @@ def gh(*args):
 runs=json.loads(gh('run','list','--limit','30','--json','databaseId,headBranch,headSha,event,status,conclusion,url,createdAt'))
 (ROOT/'docs/github_runs.json').write_text(json.dumps(runs,indent=2)+'\n')
 for run in runs:
- if run['status']=='completed':
+ if run['status']=='completed' and not (ROOT/'docs/evidence'/f"actions-{run['databaseId']}.json").exists():
   details=gh('run','view',str(run['databaseId']),'--json','jobs,conclusion,url,headBranch,headSha')
   (ROOT/'docs/evidence'/f"actions-{run['databaseId']}.json").write_text(details)
   if run['conclusion']=='failure':
