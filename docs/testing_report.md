@@ -2,8 +2,6 @@
 
 Student: Afraz Khan | Roll number: 23p3034 | GitHub: theafrazkhan
 
-Submission prepared: 11 November 2026 (Asia/Karachi).
-
 ## 1. Scope and method
 
 I tested the supplied Student Course Registration System against REQUIREMENTS.md.
@@ -258,7 +256,7 @@ end-to-end behaviors. No manual percentage here is inferred from branch coverage
 
 ## 7. GitHub collaboration and CI evidence
 
-Repository: https://github.com/theafrazkhan/SQE-Assignment-2 (private).
+Repository: https://github.com/theafrazkhan/SQE-Assignment-2 (public).
 
 - blackbox-testing (base at creation: main): https://github.com/theafrazkhan/SQE-Assignment-2/pull/6
 - whitebox-testing (base at creation: blackbox-testing): https://github.com/theafrazkhan/SQE-Assignment-2/pull/7
@@ -304,7 +302,7 @@ peer feedback was addressed. The instructor must confirm how the C4 criterion
 applies to solo work. This is the remaining collaboration requirement; automated
 tests and a self-check cannot substitute for another member's review.
 
-The repository is private. Give the instructor access before submission.
+The repository is public and can be opened using the link above.
 Review review_notes.md for viva topics and explain each change in your own words.
 
 ## 9. Reproduction and practical limits

@@ -32,8 +32,6 @@ text=f'''# SE3002 - Software Quality Engineering: Assignment 2
 
 Student: Afraz Khan | Roll number: 23p3034 | GitHub: theafrazkhan
 
-Submission prepared: 11 November 2026 (Asia/Karachi).
-
 ## 1. Scope and method
 
 I tested the supplied Student Course Registration System against REQUIREMENTS.md.
@@ -111,7 +109,7 @@ The following analysis uses original starter line numbers, retained in
 
 '''+(DOCS/'whitebox_analysis.md').read_text().replace('# White-box analysis\n','',1)
 text+='''\n## 7. GitHub collaboration and CI evidence\n\n'''
-text+='Repository: '+links['repository']+' (private).\n\n'
+text+='Repository: '+links['repository']+' (public).\n\n'
 for pr in links['pull_requests']:
     text+=f"- {pr['branch']} (base at creation: {pr['base']}): {pr['url']}\n"
 text+='\nAll three PRs are merged; all five defect issues are closed. Peer review remains pending for this solo submission.\n'
@@ -140,7 +138,7 @@ peer feedback was addressed. The instructor must confirm how the C4 criterion
 applies to solo work. This is the remaining collaboration requirement; automated
 tests and a self-check cannot substitute for another member's review.
 
-The repository is private. Give the instructor access before submission.
+The repository is public and can be opened using the link above.
 Review review_notes.md for viva topics and explain each change in your own words.
 
 ## 9. Reproduction and practical limits

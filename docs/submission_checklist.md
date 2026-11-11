@@ -16,7 +16,7 @@
 - [x] Final 63/63 pass; statement coverage 58/58; branch coverage 26/26.
 - [x] Required XLSX, PNG and PDF files created and opened for verification.
 - [ ] Independent member review and feedback: pending for solo work, as agreed.
-- [ ] Give the instructor access to the private GitHub repository.
+- [x] Repository is public and accessible to the instructor.
 
 Repository: https://github.com/theafrazkhan/SQE-Assignment-2
 PRs: /pull/6, /pull/7, /pull/8. Issues: /issues/1 through /issues/5.

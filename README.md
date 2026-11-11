@@ -43,7 +43,7 @@ limitation is explained in the report.
 
 ## GitHub history
 
-Repository: https://github.com/theafrazkhan/SQE-Assignment-2 (private).
+Repository: https://github.com/theafrazkhan/SQE-Assignment-2 (public).
 Branches: `blackbox-testing`, `whitebox-testing`, `defect-fixes`.
 Five issues describe the distinct defects; three PRs separate the test designs,
 structural work, and corrections. GitHub Actions retains test and coverage
@@ -52,7 +52,7 @@ artifacts even on legitimate failures.
 This is solo work. Independent peer review is **pending**, as agreed with Afraz.
 No second member, approval, or feedback has been invented. Confirm with the
 instructor how the collaborative review criterion applies to a solo submission.
-The private repository must be shared with the instructor for assessment.
+The public repository can be opened by the instructor without an invitation.
 
 ## Rebuild documents (optional)
 
