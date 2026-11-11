@@ -1,0 +1,761 @@
+[
+  {
+    "id": "C01",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Typical valid credits",
+    "kind": "credit",
+    "inputs": {
+      "current": 9,
+      "new": 3
+    },
+    "expected": true
+  },
+  {
+    "id": "C02",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Current below 0",
+    "kind": "credit",
+    "inputs": {
+      "current": -1,
+      "new": 3
+    },
+    "expected": "Invalid current credits"
+  },
+  {
+    "id": "C03",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Current above 18",
+    "kind": "credit",
+    "inputs": {
+      "current": 19,
+      "new": 3
+    },
+    "expected": "Invalid current credits"
+  },
+  {
+    "id": "C04",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Course below 1",
+    "kind": "credit",
+    "inputs": {
+      "current": 0,
+      "new": 0
+    },
+    "expected": "Invalid course credits"
+  },
+  {
+    "id": "C05",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Course above 4",
+    "kind": "credit",
+    "inputs": {
+      "current": 0,
+      "new": 5
+    },
+    "expected": "Invalid course credits"
+  },
+  {
+    "id": "C06",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Lowest current and course credits",
+    "kind": "credit",
+    "inputs": {
+      "current": 0,
+      "new": 1
+    },
+    "expected": true
+  },
+  {
+    "id": "C07",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Current just above minimum",
+    "kind": "credit",
+    "inputs": {
+      "current": 1,
+      "new": 2
+    },
+    "expected": true
+  },
+  {
+    "id": "C08",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Total exactly 18 at current 17",
+    "kind": "credit",
+    "inputs": {
+      "current": 17,
+      "new": 1
+    },
+    "expected": true
+  },
+  {
+    "id": "C09",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Current 18; total exceeds maximum",
+    "kind": "credit",
+    "inputs": {
+      "current": 18,
+      "new": 1
+    },
+    "expected": false
+  },
+  {
+    "id": "C10",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Course maximum 4",
+    "kind": "credit",
+    "inputs": {
+      "current": 0,
+      "new": 4
+    },
+    "expected": true
+  },
+  {
+    "id": "C11",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Course just below maximum",
+    "kind": "credit",
+    "inputs": {
+      "current": 0,
+      "new": 3
+    },
+    "expected": true
+  },
+  {
+    "id": "C12",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Total 17",
+    "kind": "credit",
+    "inputs": {
+      "current": 14,
+      "new": 3
+    },
+    "expected": true
+  },
+  {
+    "id": "C13",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Total 18",
+    "kind": "credit",
+    "inputs": {
+      "current": 15,
+      "new": 3
+    },
+    "expected": true
+  },
+  {
+    "id": "C14",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Total 19",
+    "kind": "credit",
+    "inputs": {
+      "current": 16,
+      "new": 3
+    },
+    "expected": false
+  },
+  {
+    "id": "C15",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-01/02",
+    "description": "Both invalid: current checked first",
+    "kind": "credit",
+    "inputs": {
+      "current": -1,
+      "new": 0
+    },
+    "expected": "Invalid current credits"
+  },
+  {
+    "id": "P01",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-03",
+    "description": "No prerequisites",
+    "kind": "prereq",
+    "inputs": {
+      "completed": [],
+      "required": []
+    },
+    "expected": true
+  },
+  {
+    "id": "P02",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-03",
+    "description": "All prerequisites",
+    "kind": "prereq",
+    "inputs": {
+      "completed": [
+        "CS101",
+        "MATH101"
+      ],
+      "required": [
+        "CS101",
+        "MATH101"
+      ]
+    },
+    "expected": true
+  },
+  {
+    "id": "P03",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-03",
+    "description": "Only some prerequisites",
+    "kind": "prereq",
+    "inputs": {
+      "completed": [
+        "CS101"
+      ],
+      "required": [
+        "CS101",
+        "MATH101"
+      ]
+    },
+    "expected": false
+  },
+  {
+    "id": "P04",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-03",
+    "description": "No required course completed",
+    "kind": "prereq",
+    "inputs": {
+      "completed": [],
+      "required": [
+        "CS101",
+        "MATH101"
+      ]
+    },
+    "expected": false
+  },
+  {
+    "id": "P05",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-03",
+    "description": "Unrelated completed course",
+    "kind": "prereq",
+    "inputs": {
+      "completed": [
+        "OTHER"
+      ],
+      "required": [
+        "CS101"
+      ]
+    },
+    "expected": false
+  },
+  {
+    "id": "D01",
+    "techniques": [
+      "ECP",
+      "BVA",
+      "DT"
+    ],
+    "requirements": "FR-04/08/10",
+    "description": "Zero dues; seat available",
+    "kind": "decision",
+    "inputs": {},
+    "expected": "REGISTERED"
+  },
+  {
+    "id": "D02",
+    "techniques": [
+      "ECP",
+      "BVA",
+      "DT"
+    ],
+    "requirements": "FR-04/10",
+    "description": "Dues of one rupee",
+    "kind": "decision",
+    "inputs": {
+      "dues": 1
+    },
+    "expected": "DUES_BLOCK"
+  },
+  {
+    "id": "D03",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-04/10",
+    "description": "Typical positive dues",
+    "kind": "decision",
+    "inputs": {
+      "dues": 500
+    },
+    "expected": "DUES_BLOCK"
+  },
+  {
+    "id": "D04",
+    "techniques": [
+      "ECP",
+      "BVA"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Negative dues",
+    "kind": "decision",
+    "inputs": {
+      "dues": -1
+    },
+    "expected": "Invalid dues"
+  },
+  {
+    "id": "D05",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-05/10",
+    "description": "Duplicate course",
+    "kind": "decision",
+    "inputs": {
+      "duplicate": true
+    },
+    "expected": "ALREADY_REGISTERED"
+  },
+  {
+    "id": "D06",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-06/10",
+    "description": "Missing prerequisites",
+    "kind": "decision",
+    "inputs": {
+      "completed": []
+    },
+    "expected": "PREREQUISITES_MISSING"
+  },
+  {
+    "id": "D07",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-07/10",
+    "description": "Credit limit exceeded",
+    "kind": "decision",
+    "inputs": {
+      "current": 16
+    },
+    "expected": "CREDIT_LIMIT"
+  },
+  {
+    "id": "D08",
+    "techniques": [
+      "ECP",
+      "BVA",
+      "DT"
+    ],
+    "requirements": "FR-08/10",
+    "description": "Full course",
+    "kind": "decision",
+    "inputs": {
+      "enrolled": 2
+    },
+    "expected": "WAITLISTED"
+  },
+  {
+    "id": "D09",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-09/10",
+    "description": "Dues precede duplicate, prerequisites, credit and full seat",
+    "kind": "decision",
+    "inputs": {
+      "dues": 1,
+      "duplicate": true,
+      "completed": [],
+      "current": 18,
+      "enrolled": 2
+    },
+    "expected": "DUES_BLOCK"
+  },
+  {
+    "id": "D10",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-09/10",
+    "description": "Duplicate precedes prerequisites, credit and full seat",
+    "kind": "decision",
+    "inputs": {
+      "duplicate": true,
+      "completed": [],
+      "current": 18,
+      "enrolled": 2
+    },
+    "expected": "ALREADY_REGISTERED"
+  },
+  {
+    "id": "D11",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-09/10",
+    "description": "Prerequisites precede credit and full seat",
+    "kind": "decision",
+    "inputs": {
+      "completed": [],
+      "current": 18,
+      "enrolled": 2
+    },
+    "expected": "PREREQUISITES_MISSING"
+  },
+  {
+    "id": "D12",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-09/10",
+    "description": "Credit precedes full seat",
+    "kind": "decision",
+    "inputs": {
+      "current": 18,
+      "enrolled": 2
+    },
+    "expected": "CREDIT_LIMIT"
+  },
+  {
+    "id": "D13",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Capacity just below minimum",
+    "kind": "decision",
+    "inputs": {
+      "capacity": 0,
+      "enrolled": 0
+    },
+    "expected": "Invalid capacity or enrollment"
+  },
+  {
+    "id": "D14",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-08/15/10",
+    "description": "Capacity minimum; empty course",
+    "kind": "decision",
+    "inputs": {
+      "capacity": 1,
+      "enrolled": 0
+    },
+    "expected": "REGISTERED"
+  },
+  {
+    "id": "D15",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-08/15/10",
+    "description": "Capacity minimum; full course",
+    "kind": "decision",
+    "inputs": {
+      "capacity": 1,
+      "enrolled": 1
+    },
+    "expected": "WAITLISTED"
+  },
+  {
+    "id": "D16",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Enrollment just below zero",
+    "kind": "decision",
+    "inputs": {
+      "enrolled": -1
+    },
+    "expected": "Invalid capacity or enrollment"
+  },
+  {
+    "id": "D17",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-08/15/10",
+    "description": "Enrollment minimum zero",
+    "kind": "decision",
+    "inputs": {
+      "enrolled": 0
+    },
+    "expected": "REGISTERED"
+  },
+  {
+    "id": "D18",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Enrollment just above capacity",
+    "kind": "decision",
+    "inputs": {
+      "enrolled": 3
+    },
+    "expected": "Invalid capacity or enrollment"
+  },
+  {
+    "id": "D19",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Dues validation precedes capacity validation",
+    "kind": "decision",
+    "inputs": {
+      "dues": -1,
+      "capacity": 0,
+      "enrolled": 0
+    },
+    "expected": "Invalid dues"
+  },
+  {
+    "id": "D20",
+    "techniques": [
+      "DT"
+    ],
+    "requirements": "FR-15/10",
+    "description": "Capacity validation precedes positive dues decision",
+    "kind": "decision",
+    "inputs": {
+      "dues": 1,
+      "capacity": 0,
+      "enrolled": 0
+    },
+    "expected": "Invalid capacity or enrollment"
+  },
+  {
+    "id": "D21",
+    "techniques": [
+      "ECP"
+    ],
+    "requirements": "FR-06/10",
+    "description": "Partial prerequisites block registration",
+    "kind": "decision",
+    "inputs": {
+      "completed": [
+        "CS101"
+      ]
+    },
+    "expected": "PREREQUISITES_MISSING"
+  },
+  {
+    "id": "D22",
+    "techniques": [
+      "BVA"
+    ],
+    "requirements": "FR-01/08/10",
+    "description": "Exactly 18 credits allowed to register",
+    "kind": "decision",
+    "inputs": {
+      "current": 15
+    },
+    "expected": "REGISTERED"
+  },
+  {
+    "id": "S01",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Successful registration updates all three fields",
+    "kind": "register",
+    "inputs": {},
+    "expected": "REGISTERED"
+  },
+  {
+    "id": "S02",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "First waitlist entry changes only waitlist",
+    "kind": "register",
+    "inputs": {
+      "enrolled": 2
+    },
+    "expected": "WAITLISTED"
+  },
+  {
+    "id": "S03",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Repeated waitlist attempt adds no duplicate",
+    "kind": "register",
+    "inputs": {
+      "enrolled": 2,
+      "waitlist": [
+        "S001"
+      ]
+    },
+    "expected": "WAITLISTED"
+  },
+  {
+    "id": "S04",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Dues rejection preserves all state",
+    "kind": "register",
+    "inputs": {
+      "dues": 1
+    },
+    "expected": "DUES_BLOCK"
+  },
+  {
+    "id": "S05",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Duplicate rejection preserves all state",
+    "kind": "register",
+    "inputs": {
+      "duplicate": true
+    },
+    "expected": "ALREADY_REGISTERED"
+  },
+  {
+    "id": "S06",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Prerequisite rejection preserves all state",
+    "kind": "register",
+    "inputs": {
+      "completed": []
+    },
+    "expected": "PREREQUISITES_MISSING"
+  },
+  {
+    "id": "S07",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Credit rejection preserves all state",
+    "kind": "register",
+    "inputs": {
+      "current": 16
+    },
+    "expected": "CREDIT_LIMIT"
+  },
+  {
+    "id": "S08",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Invalid dues leave state unchanged",
+    "kind": "register",
+    "inputs": {
+      "dues": -1
+    },
+    "expected": "Invalid dues"
+  },
+  {
+    "id": "S09",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-11/12/15",
+    "description": "Invalid capacity leaves state unchanged",
+    "kind": "register",
+    "inputs": {
+      "capacity": 0,
+      "enrolled": 0
+    },
+    "expected": "Invalid capacity or enrollment"
+  },
+  {
+    "id": "S10",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-13",
+    "description": "Withdrawal removes course, credits and one enrolled seat",
+    "kind": "withdraw",
+    "inputs": {
+      "duplicate": true
+    },
+    "expected": true
+  },
+  {
+    "id": "S11",
+    "techniques": [
+      "State"
+    ],
+    "requirements": "FR-14",
+    "description": "Unregistered withdrawal changes nothing",
+    "kind": "withdraw",
+    "inputs": {},
+    "expected": false
+  }
+]
