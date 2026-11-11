@@ -1,0 +1,190 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.2.0, pluggy-1.7.0 -- /tmp/sqe-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2
+configfile: pytest.ini
+plugins: cov-7.1.0
+collecting ... collected 53 items
+
+tests/test_blackbox.py::test_requirements[C01] PASSED                    [  1%]
+tests/test_blackbox.py::test_requirements[C02] PASSED                    [  3%]
+tests/test_blackbox.py::test_requirements[C03] PASSED                    [  5%]
+tests/test_blackbox.py::test_requirements[C04] PASSED                    [  7%]
+tests/test_blackbox.py::test_requirements[C05] PASSED                    [  9%]
+tests/test_blackbox.py::test_requirements[C06] PASSED                    [ 11%]
+tests/test_blackbox.py::test_requirements[C07] PASSED                    [ 13%]
+tests/test_blackbox.py::test_requirements[C08] FAILED                    [ 15%]
+tests/test_blackbox.py::test_requirements[C09] PASSED                    [ 16%]
+tests/test_blackbox.py::test_requirements[C10] PASSED                    [ 18%]
+tests/test_blackbox.py::test_requirements[C11] PASSED                    [ 20%]
+tests/test_blackbox.py::test_requirements[C12] PASSED                    [ 22%]
+tests/test_blackbox.py::test_requirements[C13] FAILED                    [ 24%]
+tests/test_blackbox.py::test_requirements[C14] PASSED                    [ 26%]
+tests/test_blackbox.py::test_requirements[C15] PASSED                    [ 28%]
+tests/test_blackbox.py::test_requirements[P01] PASSED                    [ 30%]
+tests/test_blackbox.py::test_requirements[P02] PASSED                    [ 32%]
+tests/test_blackbox.py::test_requirements[P03] FAILED                    [ 33%]
+tests/test_blackbox.py::test_requirements[P04] PASSED                    [ 35%]
+tests/test_blackbox.py::test_requirements[P05] PASSED                    [ 37%]
+tests/test_blackbox.py::test_requirements[D01] PASSED                    [ 39%]
+tests/test_blackbox.py::test_requirements[D02] FAILED                    [ 41%]
+tests/test_blackbox.py::test_requirements[D03] FAILED                    [ 43%]
+tests/test_blackbox.py::test_requirements[D04] PASSED                    [ 45%]
+tests/test_blackbox.py::test_requirements[D05] PASSED                    [ 47%]
+tests/test_blackbox.py::test_requirements[D06] PASSED                    [ 49%]
+tests/test_blackbox.py::test_requirements[D07] PASSED                    [ 50%]
+tests/test_blackbox.py::test_requirements[D08] FAILED                    [ 52%]
+tests/test_blackbox.py::test_requirements[D09] FAILED                    [ 54%]
+tests/test_blackbox.py::test_requirements[D10] PASSED                    [ 56%]
+tests/test_blackbox.py::test_requirements[D11] PASSED                    [ 58%]
+tests/test_blackbox.py::test_requirements[D12] PASSED                    [ 60%]
+tests/test_blackbox.py::test_requirements[D13] PASSED                    [ 62%]
+tests/test_blackbox.py::test_requirements[D14] PASSED                    [ 64%]
+tests/test_blackbox.py::test_requirements[D15] FAILED                    [ 66%]
+tests/test_blackbox.py::test_requirements[D16] PASSED                    [ 67%]
+tests/test_blackbox.py::test_requirements[D17] PASSED                    [ 69%]
+tests/test_blackbox.py::test_requirements[D18] PASSED                    [ 71%]
+tests/test_blackbox.py::test_requirements[D19] PASSED                    [ 73%]
+tests/test_blackbox.py::test_requirements[D20] PASSED                    [ 75%]
+tests/test_blackbox.py::test_requirements[D21] FAILED                    [ 77%]
+tests/test_blackbox.py::test_requirements[D22] FAILED                    [ 79%]
+tests/test_blackbox.py::test_requirements[S01] PASSED                    [ 81%]
+tests/test_blackbox.py::test_requirements[S02] FAILED                    [ 83%]
+tests/test_blackbox.py::test_requirements[S03] FAILED                    [ 84%]
+tests/test_blackbox.py::test_requirements[S04] FAILED                    [ 86%]
+tests/test_blackbox.py::test_requirements[S05] PASSED                    [ 88%]
+tests/test_blackbox.py::test_requirements[S06] PASSED                    [ 90%]
+tests/test_blackbox.py::test_requirements[S07] PASSED                    [ 92%]
+tests/test_blackbox.py::test_requirements[S08] PASSED                    [ 94%]
+tests/test_blackbox.py::test_requirements[S09] PASSED                    [ 96%]
+tests/test_blackbox.py::test_requirements[S10] FAILED                    [ 98%]
+tests/test_blackbox.py::test_requirements[S11] PASSED                    [100%]
+
+=================================== FAILURES ===================================
+____________________________ test_requirements[C08] ____________________________
+tests/test_blackbox.py:39: in test_requirements
+    assert check_credit_limit(values['current'], values['new']) is expected
+E   assert False is True
+E    +  where False = check_credit_limit(17, 1)
+____________________________ test_requirements[C13] ____________________________
+tests/test_blackbox.py:39: in test_requirements
+    assert check_credit_limit(values['current'], values['new']) is expected
+E   assert False is True
+E    +  where False = check_credit_limit(15, 3)
+____________________________ test_requirements[P03] ____________________________
+tests/test_blackbox.py:42: in test_requirements
+    assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+E   AssertionError: assert True is False
+E    +  where True = prerequisites_satisfied({'CS101'}, {'CS101', 'MATH101'})
+E    +    where {'CS101'} = set(['CS101'])
+E    +    and   {'CS101', 'MATH101'} = set(['CS101', 'MATH101'])
+____________________________ test_requirements[D02] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED
+____________________________ test_requirements[D03] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED
+____________________________ test_requirements[D08] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED
+____________________________ test_requirements[D09] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'ALREADY_REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + ALREADY_REGISTERED
+____________________________ test_requirements[D15] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED
+____________________________ test_requirements[D21] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'PREREQUISITES_MISSING'
+E     
+E     - PREREQUISITES_MISSING
+E     + REGISTERED
+____________________________ test_requirements[D22] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'CREDIT_LIMIT' == 'REGISTERED'
+E     
+E     - REGISTERED
+E     + CREDIT_LIMIT
+____________________________ test_requirements[S02] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED
+____________________________ test_requirements[S03] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED
+____________________________ test_requirements[S04] ____________________________
+tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED
+____________________________ test_requirements[S10] ____________________________
+tests/test_blackbox.py:71: in test_requirements
+    assert snapshot(student, course) == after
+E   AssertionError: assert ({'student_id...led': 1, ...}) == ({'student_id...led': 0, ...})
+E     
+E     At index 1 diff: {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 1, 'prerequisites': {'CS101', 'MATH101'}, 'waitlist': []} != {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 0, 'prerequisites': {'CS101', 'MATH101'}, 'waitlist': []}
+E     
+E     Full diff: (-: missing in left side, +: extra in left side)
+E       (
+E           {
+E               'student_id': 'S001',...
+E     
+E     ...Full output truncated, use '-vv' to show
+- generated xml file: /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/initial-blackbox/results.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.10.12-final-0 _______________
+
+Name              Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------
+registration.py      57      3     26      3    93%   51, 59, 71
+-------------------------------------------------------------
+TOTAL                57      3     26      3    93%
+Coverage HTML written to dir /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/initial-blackbox/html
+Coverage JSON written to file /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/initial-blackbox/coverage.json
+=========================== short test summary info ============================
+FAILED tests/test_blackbox.py::test_requirements[C08] - assert False is True
+FAILED tests/test_blackbox.py::test_requirements[C13] - assert False is True
+FAILED tests/test_blackbox.py::test_requirements[P03] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D02] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D03] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D08] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D09] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D15] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D21] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[D22] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[S02] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[S03] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[S04] - AssertionError: asser...
+FAILED tests/test_blackbox.py::test_requirements[S10] - AssertionError: asser...
+======================== 14 failed, 39 passed in 0.27s =========================
