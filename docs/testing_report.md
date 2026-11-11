@@ -269,7 +269,13 @@ with branch coverage, and uploads JUnit/XML/HTML artifacts even if tests fail.
 No continue-on-error, xfail or skipped defects are used to hide the initial bugs.
 Actual GitHub run links and conclusions are recorded below and in github_runs.json.
 
-GitHub run collection is pending; local evidence is already present.
+- defect-fixes: success - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078017623
+
+- whitebox-testing: failure - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078012356
+
+- blackbox-testing: failure - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078006912
+
+- main: failure - https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43077947677
 
 ## 8. Contributions, review status and remaining action
 

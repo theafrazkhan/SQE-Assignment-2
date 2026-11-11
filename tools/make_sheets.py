@@ -43,6 +43,20 @@ for c in cases:
 sheet.append(['Technique rows', sum(len(c['techniques']) for c in cases)])
 sheet.append(['Unique executions', len(cases)])
 sheet.append(['Removed exact duplicates', sum(len(c['techniques']) for c in cases)-len(cases)])
+# Attach measured outcomes without changing the original design oracle.
+from xml.etree import ElementTree as ET
+sheet = book.create_sheet('Execution results')
+sheet.append(['Test ID', 'Initial starter', 'Final fixed module'])
+results = {}
+for phase in ['initial-blackbox', 'final-regression']:
+    file = ROOT / 'docs/evidence' / phase / 'results.xml'
+    results[phase] = {}
+    if file.exists():
+        for test in ET.parse(file).findall('.//testcase'):
+            key = test.attrib['name'].split('[')[-1].rstrip(']')
+            results[phase][key] = 'FAIL' if test.find('failure') is not None else 'PASS'
+for case in cases:
+    sheet.append([case['id'], results['initial-blackbox'].get(case['id'], 'Not run'), results['final-regression'].get(case['id'], 'Not run')])
 finish(book, 'blackbox_test_design.xlsx')
 
 book = Workbook()

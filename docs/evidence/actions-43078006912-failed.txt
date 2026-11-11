@@ -1,0 +1,681 @@
+tests	Run tests and measure coverage	﻿2026-11-11T18:28:06.8564504Z ##[group]Run python -m pytest tests/ -v --junitxml=results.xml --cov=registration --cov-branch --cov-report=term-missing --cov-report=xml:coverage.xml --cov-report=html:htmlcov
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8566804Z [36;1mpython -m pytest tests/ -v --junitxml=results.xml --cov=registration --cov-branch --cov-report=term-missing --cov-report=xml:coverage.xml --cov-report=html:htmlcov[0m
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8588619Z shell: /usr/bin/bash -e {0}
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8589060Z env:
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8589526Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.22/x64
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8590337Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.22/x64/lib/pkgconfig
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8591107Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8591810Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8592516Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8593230Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.22/x64/lib
+tests	Run tests and measure coverage	2026-11-11T18:28:06.8594019Z ##[endgroup]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1944584Z ============================= test session starts ==============================
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1945985Z platform linux -- Python 3.10.22, pytest-9.2.0, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.10.22/x64/bin/python
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1947514Z cachedir: .pytest_cache
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1948199Z rootdir: /home/runner/work/SQE-Assignment-2/SQE-Assignment-2
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1948951Z configfile: pytest.ini
+tests	Run tests and measure coverage	2026-11-11T18:28:07.1949508Z plugins: cov-7.1.0
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2211966Z collecting ... collected 53 items
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2212641Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2361023Z tests/test_blackbox.py::test_requirements[C01] PASSED                    [  1%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2383900Z tests/test_blackbox.py::test_requirements[C02] PASSED                    [  3%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2399324Z tests/test_blackbox.py::test_requirements[C03] PASSED                    [  5%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2417063Z tests/test_blackbox.py::test_requirements[C04] PASSED                    [  7%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2432040Z tests/test_blackbox.py::test_requirements[C05] PASSED                    [  9%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2446790Z tests/test_blackbox.py::test_requirements[C06] PASSED                    [ 11%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2461127Z tests/test_blackbox.py::test_requirements[C07] PASSED                    [ 13%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2551939Z tests/test_blackbox.py::test_requirements[C08] FAILED                    [ 15%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2567122Z tests/test_blackbox.py::test_requirements[C09] PASSED                    [ 16%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2581972Z tests/test_blackbox.py::test_requirements[C10] PASSED                    [ 18%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2596272Z tests/test_blackbox.py::test_requirements[C11] PASSED                    [ 20%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2610716Z tests/test_blackbox.py::test_requirements[C12] PASSED                    [ 22%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2673981Z tests/test_blackbox.py::test_requirements[C13] FAILED                    [ 24%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2688885Z tests/test_blackbox.py::test_requirements[C14] PASSED                    [ 26%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2703604Z tests/test_blackbox.py::test_requirements[C15] PASSED                    [ 28%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2717618Z tests/test_blackbox.py::test_requirements[P01] PASSED                    [ 30%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2731526Z tests/test_blackbox.py::test_requirements[P02] PASSED                    [ 32%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2796566Z tests/test_blackbox.py::test_requirements[P03] FAILED                    [ 33%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2811413Z tests/test_blackbox.py::test_requirements[P04] PASSED                    [ 35%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2825699Z tests/test_blackbox.py::test_requirements[P05] PASSED                    [ 37%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2843354Z tests/test_blackbox.py::test_requirements[D01] PASSED                    [ 39%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2919172Z tests/test_blackbox.py::test_requirements[D02] FAILED                    [ 41%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.2991167Z tests/test_blackbox.py::test_requirements[D03] FAILED                    [ 43%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3010223Z tests/test_blackbox.py::test_requirements[D04] PASSED                    [ 45%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3027067Z tests/test_blackbox.py::test_requirements[D05] PASSED                    [ 47%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3043237Z tests/test_blackbox.py::test_requirements[D06] PASSED                    [ 49%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3059955Z tests/test_blackbox.py::test_requirements[D07] PASSED                    [ 50%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3132754Z tests/test_blackbox.py::test_requirements[D08] FAILED                    [ 52%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3205500Z tests/test_blackbox.py::test_requirements[D09] FAILED                    [ 54%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3222879Z tests/test_blackbox.py::test_requirements[D10] PASSED                    [ 56%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3239415Z tests/test_blackbox.py::test_requirements[D11] PASSED                    [ 58%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3256375Z tests/test_blackbox.py::test_requirements[D12] PASSED                    [ 60%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3275578Z tests/test_blackbox.py::test_requirements[D13] PASSED                    [ 62%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3292028Z tests/test_blackbox.py::test_requirements[D14] PASSED                    [ 64%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3368779Z tests/test_blackbox.py::test_requirements[D15] FAILED                    [ 66%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3386252Z tests/test_blackbox.py::test_requirements[D16] PASSED                    [ 67%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3402792Z tests/test_blackbox.py::test_requirements[D17] PASSED                    [ 69%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3419216Z tests/test_blackbox.py::test_requirements[D18] PASSED                    [ 71%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3435795Z tests/test_blackbox.py::test_requirements[D19] PASSED                    [ 73%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3452405Z tests/test_blackbox.py::test_requirements[D20] PASSED                    [ 75%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3606496Z tests/test_blackbox.py::test_requirements[D21] FAILED                    [ 77%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3680311Z tests/test_blackbox.py::test_requirements[D22] FAILED                    [ 79%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3698247Z tests/test_blackbox.py::test_requirements[S01] PASSED                    [ 81%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3772163Z tests/test_blackbox.py::test_requirements[S02] FAILED                    [ 83%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3845045Z tests/test_blackbox.py::test_requirements[S03] FAILED                    [ 84%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3916998Z tests/test_blackbox.py::test_requirements[S04] FAILED                    [ 86%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3934123Z tests/test_blackbox.py::test_requirements[S05] PASSED                    [ 88%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3950224Z tests/test_blackbox.py::test_requirements[S06] PASSED                    [ 90%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3967098Z tests/test_blackbox.py::test_requirements[S07] PASSED                    [ 92%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.3983839Z tests/test_blackbox.py::test_requirements[S08] PASSED                    [ 94%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4000188Z tests/test_blackbox.py::test_requirements[S09] PASSED                    [ 96%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4274552Z tests/test_blackbox.py::test_requirements[S10] FAILED                    [ 98%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4849947Z tests/test_blackbox.py::test_requirements[S11] PASSED                    [100%]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4851047Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4878724Z =================================== FAILURES ===================================
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4879495Z ____________________________ test_requirements[C08] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4880303Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4881259Z case = {'id': 'C08', 'techniques': ['BVA'], 'requirements': 'FR-01/02', 'description': 'Total exactly 18 at current 17', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4882531Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4883117Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4884464Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4885719Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4887219Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4887976Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4889032Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4890268Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4891305Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4892257Z >               assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4893580Z E               assert False is True
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4894405Z E                +  where False = check_credit_limit(17, 1)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4894708Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4894886Z tests/test_blackbox.py:39: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4895429Z ____________________________ test_requirements[C13] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4895844Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4896221Z case = {'id': 'C13', 'techniques': ['BVA'], 'requirements': 'FR-01/02', 'description': 'Total 18', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4896756Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4897043Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4897597Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4898120Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4898916Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4899282Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4899796Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4900377Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4900853Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4901318Z >               assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4901889Z E               assert False is True
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4902313Z E                +  where False = check_credit_limit(15, 3)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4902641Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4902803Z tests/test_blackbox.py:39: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4903348Z ____________________________ test_requirements[P03] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4903870Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4904307Z case = {'id': 'P03', 'techniques': ['ECP'], 'requirements': 'FR-03', 'description': 'Only some prerequisites', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4904900Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4905205Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4905770Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4906282Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4906830Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4907215Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4907743Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4908371Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4908833Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4909291Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4909858Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4910154Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4910785Z >           assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4911507Z E           AssertionError: assert True is False
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4912083Z E            +  where True = prerequisites_satisfied({'CS101'}, {'CS101', 'MATH101'})
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4912652Z E            +    where {'CS101'} = set(['CS101'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4913142Z E            +    and   {'CS101', 'MATH101'} = set(['CS101', 'MATH101'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4913621Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4913784Z tests/test_blackbox.py:42: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4914305Z ____________________________ test_requirements[D02] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4914679Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4915127Z case = {'id': 'D02', 'techniques': ['ECP', 'BVA', 'DT'], 'requirements': 'FR-04/10', 'description': 'Dues of one rupee', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4915891Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4916177Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4916806Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4917321Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4917892Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4918252Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4918762Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4919804Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4920285Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4921064Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4921621Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4921911Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4922527Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4923179Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4923588Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4923941Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4924472Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4925245Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4925835Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4926386Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4927035Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4927579Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4928044Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4928466Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4928805Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4929251Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4929635Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4930032Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4930351Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4930838Z E           AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4931677Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4931991Z E             - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4932344Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4932561Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4932734Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4933284Z ____________________________ test_requirements[D03] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4933844Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4934296Z case = {'id': 'D03', 'techniques': ['ECP'], 'requirements': 'FR-04/10', 'description': 'Typical positive dues', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4934870Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4935147Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4935726Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4936265Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4936828Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4937223Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4937741Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4938381Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4938856Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4939349Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4939902Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4940198Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4940856Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4941541Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4941830Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4942161Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4942892Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4943616Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4944245Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4944819Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4945471Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4946015Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4946465Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4946888Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4947223Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4947624Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4947980Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4948330Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4948633Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4949109Z E           AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4949587Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4949879Z E             - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4950202Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4950426Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4950600Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4951354Z ____________________________ test_requirements[D08] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4951749Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4952187Z case = {'id': 'D08', 'techniques': ['ECP', 'BVA', 'DT'], 'requirements': 'FR-08/10', 'description': 'Full course', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4952760Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4953048Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4957108Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4957691Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4958237Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4958618Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4959177Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4959821Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4960311Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4960800Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4961544Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4962062Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4963068Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4964305Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4964777Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4965267Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4965994Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4966960Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4968014Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4968976Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4969792Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4970493Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4971064Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4971618Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4972038Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4972572Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4973051Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4973638Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4974063Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4974649Z E           AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4975268Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4975668Z E             - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4976136Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4976654Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4976864Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4977971Z ____________________________ test_requirements[D09] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4978867Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4980259Z case = {'id': 'D09', 'techniques': ['DT'], 'requirements': 'FR-09/10', 'description': 'Dues precede duplicate, prerequisites, credit and full seat', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4982007Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4982629Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4983773Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4984356Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4984966Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4985403Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4985968Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4986564Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4987143Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4987697Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4988352Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4988858Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4990190Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4991428Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4991938Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4992461Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4993153Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4993965Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4994618Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4995220Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4995886Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4996618Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4997088Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4997500Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4997832Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4998262Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4998646Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4999017Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4999329Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.4999835Z E           AssertionError: assert 'ALREADY_REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5000361Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5000669Z E             - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5001046Z E             + ALREADY_REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5001303Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5001460Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5002007Z ____________________________ test_requirements[D15] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5002439Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5002948Z case = {'id': 'D15', 'techniques': ['BVA'], 'requirements': 'FR-08/15/10', 'description': 'Capacity minimum; full course', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5004528Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5004841Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5005412Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5006019Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5006583Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5006963Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5007491Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5008112Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5008583Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5009060Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5009616Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5010171Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5010832Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5011518Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5011813Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5012143Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5012600Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5013193Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5013968Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5014529Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5015213Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5015740Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5016167Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5016658Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5017011Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5017443Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5017850Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5018229Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5018538Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5019254Z E           AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5019776Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5020086Z E             - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5020451Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5020668Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5020845Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5021418Z ____________________________ test_requirements[D21] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5021867Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5022438Z case = {'id': 'D21', 'techniques': ['ECP'], 'requirements': 'FR-06/10', 'description': 'Partial prerequisites block registration', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5023150Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5023597Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5024201Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5024770Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5025350Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5025760Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5026316Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5026981Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5027474Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5027970Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5028561Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5028904Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5029585Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5030312Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5030591Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5030908Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5031378Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5031994Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5032675Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5152253Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5153067Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5153816Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5154344Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5154799Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5155148Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5155566Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5155956Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5156761Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5157072Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5157624Z E           AssertionError: assert 'REGISTERED' == 'PREREQUISITES_MISSING'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5158182Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5158502Z E             - PREREQUISITES_MISSING
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5158918Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5159138Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5159310Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5159851Z ____________________________ test_requirements[D22] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5160274Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5160805Z case = {'id': 'D22', 'techniques': ['BVA'], 'requirements': 'FR-01/08/10', 'description': 'Exactly 18 credits allowed to register', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5161482Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5161777Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5162363Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5162913Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5180086Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5180739Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5181415Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5182495Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5183088Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5183795Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5184392Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5184720Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5185370Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5186113Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5186430Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5186791Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5187261Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5187887Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5188554Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5189187Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5189911Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5190472Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5190939Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5191401Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5191766Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5192225Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5192606Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5192979Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5193292Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5193937Z E           AssertionError: assert 'CREDIT_LIMIT' == 'REGISTERED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5194466Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5194797Z E             - REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5195167Z E             + CREDIT_LIMIT
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5195419Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5195613Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5196168Z ____________________________ test_requirements[S02] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5196579Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5197129Z case = {'id': 'S02', 'techniques': ['State'], 'requirements': 'FR-11/12/15', 'description': 'First waitlist entry changes only waitlist', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5197828Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5198154Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5198756Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5199305Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5199918Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5200325Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5201154Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5202347Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5203168Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5204146Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5205138Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5205622Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5206619Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5207623Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5208065Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5208490Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5209138Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5209959Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5210824Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5211610Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5212526Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5213303Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5214150Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5215292Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5216003Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5216967Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5217768Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5218588Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5219238Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5220261Z E           AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5221081Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5221552Z E             - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5221940Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5222135Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5222327Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5223011Z ____________________________ test_requirements[S03] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5223748Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5224329Z case = {'id': 'S03', 'techniques': ['State'], 'requirements': 'FR-11/12/15', 'description': 'Repeated waitlist attempt adds no duplicate', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5225109Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5225405Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5225994Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5226527Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5227292Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5227657Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5228178Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5228784Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5229227Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5229718Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5230277Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5230566Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5231219Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5231946Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5232224Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5232532Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5232981Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5233738Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5234442Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5235067Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5235845Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5236419Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5237165Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5237674Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5238019Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5238408Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5238790Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5239183Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5239501Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5240005Z E           AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5240433Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5240708Z E             - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5241032Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5241234Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5241410Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5241971Z ____________________________ test_requirements[S04] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5242383Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5242930Z case = {'id': 'S04', 'techniques': ['State'], 'requirements': 'FR-11/12/15', 'description': 'Dues rejection preserves all state', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5243836Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5244140Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5244750Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5245473Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5246072Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5246462Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5246993Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5247619Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5248118Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5248616Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5249214Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5249545Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5250223Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5250935Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5251220Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5251521Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5251960Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5252585Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5253243Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5254023Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5254707Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5255263Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5255739Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5256175Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5256508Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5256941Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5257337Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5257715Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5258027Z >           assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5258525Z E           AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5259022Z E             
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5259330Z E             - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5259694Z E             + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5259910Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5260085Z tests/test_blackbox.py:58: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5260639Z ____________________________ test_requirements[S10] ____________________________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5261047Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5261696Z case = {'id': 'S10', 'techniques': ['State'], 'requirements': 'FR-13', 'description': 'Withdrawal removes course, credits and one enrolled seat', ...}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5262504Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5262821Z     @pytest.mark.parametrize('case', CASES, ids=[c['id'] for c in CASES])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5263792Z     def test_requirements(case):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5264340Z         values, expected, kind = case['inputs'], case['expected'], case['kind']
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5264932Z         if kind == 'credit':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5265324Z             if isinstance(expected, str):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5265867Z                 with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5266521Z                     check_credit_limit(values['current'], values['new'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5267023Z             else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5267553Z                 assert check_credit_limit(values['current'], values['new']) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5268163Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5268505Z         if kind == 'prereq':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5269182Z             assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5270461Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5271013Z     
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5271562Z         student, course = make_objects(values)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5272373Z         before = snapshot(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5273627Z         operation = {'decision': registration_decision, 'register': register_course,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5275023Z                      'withdraw': withdraw_course}[kind]
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5276035Z         if isinstance(expected, str) and expected.startswith('Invalid'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5276710Z             with pytest.raises(ValueError, match='^' + expected + '$'):
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5277265Z                 operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5277744Z             assert snapshot(student, course) == before
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5278208Z             return
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5278568Z         result = operation(student, course)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5279015Z         if kind == 'withdraw':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5279396Z             assert result is expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5279770Z         else:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5280088Z             assert result == expected
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5280454Z         after = deepcopy(before)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5280880Z         if kind == 'register' and expected == 'REGISTERED':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5281403Z             after[0]['registered_courses'].add(course.code)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5281941Z             after[0]['current_credits'] += course.credit_hours
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5282409Z             after[1]['enrolled'] += 1
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5282843Z         elif kind == 'register' and expected == 'WAITLISTED':
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5283394Z             if student.student_id not in after[1]['waitlist']:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5284178Z                 after[1]['waitlist'].append(student.student_id)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5284684Z         elif kind == 'withdraw' and expected:
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5285151Z             after[0]['registered_courses'].remove(course.code)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5285740Z             after[0]['current_credits'] -= course.credit_hours
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5286220Z             after[1]['enrolled'] -= 1
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5286692Z >       assert snapshot(student, course) == after
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5287329Z E       AssertionError: assert ({'student_id...led': 1, ...}) == ({'student_id...led': 0, ...})
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5287935Z E         
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5289169Z E         At index 1 diff: {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 1, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []} != {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 0, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5290454Z E         
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5290873Z E         Full diff: (-: missing in left side, +: extra in left side)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5291367Z E           (
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5291628Z E               {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5292001Z E                   'student_id': 'S001',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5292409Z E                   'completed_courses': {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5292819Z E                       'CS101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5293388Z E                       'MATH101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5293875Z E                   },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5294195Z E                   'current_credits': 3,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5294579Z E                   'outstanding_dues': 0,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5294992Z E                   'registered_courses': set(),
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5295370Z E               },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5295637Z E               {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5295932Z E                   'code': 'CS201',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5296326Z E                   'credit_hours': 3,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5296718Z E                   'capacity': 2,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5297079Z E         -         'enrolled': 0,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5297429Z E         ?                     ^
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5297798Z E         +         'enrolled': 1,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5298162Z E         ?                     ^
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5298542Z E                   'prerequisites': {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5298949Z E                       'CS101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5299333Z E                       'MATH101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5299727Z E                   },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5300089Z E                   'waitlist': [],
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5300492Z E               },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5300805Z E           )
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5300978Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5301349Z tests/test_blackbox.py:71: AssertionError
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5302010Z - generated xml file: /home/runner/work/SQE-Assignment-2/SQE-Assignment-2/results.xml -
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5302781Z ================================ tests coverage ================================
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5306540Z _______________ coverage: platform linux, python 3.10.22-final-0 _______________
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5307933Z 
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5308379Z Name              Stmts   Miss Branch BrPart  Cover   Missing
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5309286Z -------------------------------------------------------------
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5310095Z registration.py      57      3     26      3    93%   51, 59, 71
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5311015Z -------------------------------------------------------------
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5311794Z TOTAL                57      3     26      3    93%
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5312623Z Coverage HTML written to dir htmlcov
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5315097Z Coverage XML written to file coverage.xml
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5315935Z =========================== short test summary info ============================
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5317044Z FAILED tests/test_blackbox.py::test_requirements[C08] - assert False is True
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5317901Z  +  where False = check_credit_limit(17, 1)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5318692Z FAILED tests/test_blackbox.py::test_requirements[C13] - assert False is True
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5319555Z  +  where False = check_credit_limit(15, 3)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5320828Z FAILED tests/test_blackbox.py::test_requirements[P03] - AssertionError: assert True is False
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5322502Z  +  where True = prerequisites_satisfied({'CS101'}, {'CS101', 'MATH101'})
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5323562Z  +    where {'CS101'} = set(['CS101'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5324308Z  +    and   {'CS101', 'MATH101'} = set(['CS101', 'MATH101'])
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5325340Z FAILED tests/test_blackbox.py::test_requirements[D02] - AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5326084Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5326379Z   - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5326680Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5327335Z FAILED tests/test_blackbox.py::test_requirements[D03] - AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5328204Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5328583Z   - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5328978Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5329851Z FAILED tests/test_blackbox.py::test_requirements[D08] - AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5330948Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5331332Z   - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5331743Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5332838Z FAILED tests/test_blackbox.py::test_requirements[D09] - AssertionError: assert 'ALREADY_REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5334419Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5334705Z   - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5335001Z   + ALREADY_REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5335656Z FAILED tests/test_blackbox.py::test_requirements[D15] - AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5336375Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5336642Z   - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5336927Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5337636Z FAILED tests/test_blackbox.py::test_requirements[D21] - AssertionError: assert 'REGISTERED' == 'PREREQUISITES_MISSING'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5338396Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5338687Z   - PREREQUISITES_MISSING
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5339042Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5339670Z FAILED tests/test_blackbox.py::test_requirements[D22] - AssertionError: assert 'CREDIT_LIMIT' == 'REGISTERED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5340391Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5340659Z   - REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5340966Z   + CREDIT_LIMIT
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5341587Z FAILED tests/test_blackbox.py::test_requirements[S02] - AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5342288Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5342527Z   - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5342787Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5343643Z FAILED tests/test_blackbox.py::test_requirements[S03] - AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5344534Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5344805Z   - WAITLISTED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5345090Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5345717Z FAILED tests/test_blackbox.py::test_requirements[S04] - AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5346404Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5346659Z   - DUES_BLOCK
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5346936Z   + REGISTERED
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5347711Z FAILED tests/test_blackbox.py::test_requirements[S10] - AssertionError: assert ({'student_id...led': 1, ...}) == ({'student_id...led': 0, ...})
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5349077Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5351765Z   At index 1 diff: {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 1, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []} != {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 0, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []}
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5353151Z   
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5353754Z   Full diff: (-: missing in left side, +: extra in left side)
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5354238Z     (
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5354503Z         {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5354782Z             'student_id': 'S001',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5355174Z             'completed_courses': {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5355560Z                 'CS101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5355902Z                 'MATH101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5356242Z             },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5356543Z             'current_credits': 3,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5356931Z             'outstanding_dues': 0,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5357336Z             'registered_courses': set(),
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5357732Z         },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5357986Z         {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5358260Z             'code': 'CS201',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5358631Z             'credit_hours': 3,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5359011Z             'capacity': 2,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5359363Z   -         'enrolled': 0,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5359723Z   ?                     ^
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5360060Z   +         'enrolled': 1,
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5360392Z   ?                     ^
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5360760Z             'prerequisites': {
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5361115Z                 'CS101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5361444Z                 'MATH101',
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5361765Z             },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5362062Z             'waitlist': [],
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5362394Z         },
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5362667Z     )
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5363052Z ======================== 14 failed, 39 passed in 0.30s =========================
+tests	Run tests and measure coverage	2026-11-11T18:28:07.5457130Z ##[error]Process completed with exit code 1.
