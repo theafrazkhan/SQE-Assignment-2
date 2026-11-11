@@ -1,0 +1,42 @@
+[
+  {
+    "conclusion": "success",
+    "createdAt": "2026-11-11T18:27:55Z",
+    "databaseId": 43078017623,
+    "event": "workflow_dispatch",
+    "headBranch": "defect-fixes",
+    "headSha": "f68b951eb4d3397a0bdffec700337e9653e34668",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078017623"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-11-11T18:27:53Z",
+    "databaseId": 43078012356,
+    "event": "workflow_dispatch",
+    "headBranch": "whitebox-testing",
+    "headSha": "ba99487d34cc2850fac3c7bbc93328ff81f69406",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078012356"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-11-11T18:27:51Z",
+    "databaseId": 43078006912,
+    "event": "workflow_dispatch",
+    "headBranch": "blackbox-testing",
+    "headSha": "de70eedf257c3b740a9333f4e97fae83f6683834",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43078006912"
+  },
+  {
+    "conclusion": "failure",
+    "createdAt": "2026-11-11T18:27:27Z",
+    "databaseId": 43077947677,
+    "event": "push",
+    "headBranch": "main",
+    "headSha": "b8362c197648a85a7567a279a4f24dff44b794f9",
+    "status": "completed",
+    "url": "https://github.com/theafrazkhan/SQE-Assignment-2/actions/runs/43077947677"
+  }
+]

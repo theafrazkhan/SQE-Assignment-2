@@ -1,0 +1,84 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-9.2.0, pluggy-1.7.0 -- /tmp/sqe-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2
+configfile: pytest.ini
+plugins: cov-7.1.0
+collecting ... collected 63 items
+
+tests/test_blackbox.py::test_requirements[C01] PASSED                    [  1%]
+tests/test_blackbox.py::test_requirements[C02] PASSED                    [  3%]
+tests/test_blackbox.py::test_requirements[C03] PASSED                    [  4%]
+tests/test_blackbox.py::test_requirements[C04] PASSED                    [  6%]
+tests/test_blackbox.py::test_requirements[C05] PASSED                    [  7%]
+tests/test_blackbox.py::test_requirements[C06] PASSED                    [  9%]
+tests/test_blackbox.py::test_requirements[C07] PASSED                    [ 11%]
+tests/test_blackbox.py::test_requirements[C08] PASSED                    [ 12%]
+tests/test_blackbox.py::test_requirements[C09] PASSED                    [ 14%]
+tests/test_blackbox.py::test_requirements[C10] PASSED                    [ 15%]
+tests/test_blackbox.py::test_requirements[C11] PASSED                    [ 17%]
+tests/test_blackbox.py::test_requirements[C12] PASSED                    [ 19%]
+tests/test_blackbox.py::test_requirements[C13] PASSED                    [ 20%]
+tests/test_blackbox.py::test_requirements[C14] PASSED                    [ 22%]
+tests/test_blackbox.py::test_requirements[C15] PASSED                    [ 23%]
+tests/test_blackbox.py::test_requirements[P01] PASSED                    [ 25%]
+tests/test_blackbox.py::test_requirements[P02] PASSED                    [ 26%]
+tests/test_blackbox.py::test_requirements[P03] PASSED                    [ 28%]
+tests/test_blackbox.py::test_requirements[P04] PASSED                    [ 30%]
+tests/test_blackbox.py::test_requirements[P05] PASSED                    [ 31%]
+tests/test_blackbox.py::test_requirements[D01] PASSED                    [ 33%]
+tests/test_blackbox.py::test_requirements[D02] PASSED                    [ 34%]
+tests/test_blackbox.py::test_requirements[D03] PASSED                    [ 36%]
+tests/test_blackbox.py::test_requirements[D04] PASSED                    [ 38%]
+tests/test_blackbox.py::test_requirements[D05] PASSED                    [ 39%]
+tests/test_blackbox.py::test_requirements[D06] PASSED                    [ 41%]
+tests/test_blackbox.py::test_requirements[D07] PASSED                    [ 42%]
+tests/test_blackbox.py::test_requirements[D08] PASSED                    [ 44%]
+tests/test_blackbox.py::test_requirements[D09] PASSED                    [ 46%]
+tests/test_blackbox.py::test_requirements[D10] PASSED                    [ 47%]
+tests/test_blackbox.py::test_requirements[D11] PASSED                    [ 49%]
+tests/test_blackbox.py::test_requirements[D12] PASSED                    [ 50%]
+tests/test_blackbox.py::test_requirements[D13] PASSED                    [ 52%]
+tests/test_blackbox.py::test_requirements[D14] PASSED                    [ 53%]
+tests/test_blackbox.py::test_requirements[D15] PASSED                    [ 55%]
+tests/test_blackbox.py::test_requirements[D16] PASSED                    [ 57%]
+tests/test_blackbox.py::test_requirements[D17] PASSED                    [ 58%]
+tests/test_blackbox.py::test_requirements[D18] PASSED                    [ 60%]
+tests/test_blackbox.py::test_requirements[D19] PASSED                    [ 61%]
+tests/test_blackbox.py::test_requirements[D20] PASSED                    [ 63%]
+tests/test_blackbox.py::test_requirements[D21] PASSED                    [ 65%]
+tests/test_blackbox.py::test_requirements[D22] PASSED                    [ 66%]
+tests/test_blackbox.py::test_requirements[S01] PASSED                    [ 68%]
+tests/test_blackbox.py::test_requirements[S02] PASSED                    [ 69%]
+tests/test_blackbox.py::test_requirements[S03] PASSED                    [ 71%]
+tests/test_blackbox.py::test_requirements[S04] PASSED                    [ 73%]
+tests/test_blackbox.py::test_requirements[S05] PASSED                    [ 74%]
+tests/test_blackbox.py::test_requirements[S06] PASSED                    [ 76%]
+tests/test_blackbox.py::test_requirements[S07] PASSED                    [ 77%]
+tests/test_blackbox.py::test_requirements[S08] PASSED                    [ 79%]
+tests/test_blackbox.py::test_requirements[S09] PASSED                    [ 80%]
+tests/test_blackbox.py::test_requirements[S10] PASSED                    [ 82%]
+tests/test_blackbox.py::test_requirements[S11] PASSED                    [ 84%]
+tests/test_whitebox.py::test_W01_large_dues_branch PASSED                [ 85%]
+tests/test_whitebox.py::test_credit_exception_propagation[W02-current-exception] PASSED [ 87%]
+tests/test_whitebox.py::test_credit_exception_propagation[W03-course-exception] PASSED [ 88%]
+tests/test_whitebox.py::test_waitlist_application_in_isolation[W04-waitlist-add] PASSED [ 90%]
+tests/test_whitebox.py::test_waitlist_application_in_isolation[W05-waitlist-existing] PASSED [ 92%]
+tests/test_whitebox.py::test_waitlist_application_in_isolation[W06-non-waitlist] PASSED [ 93%]
+tests/test_whitebox.py::test_validation_conditions[W07-valid] PASSED     [ 95%]
+tests/test_whitebox.py::test_validation_conditions[W08-negative-enrollment] PASSED [ 96%]
+tests/test_whitebox.py::test_validation_conditions[W09-above-capacity] PASSED [ 98%]
+tests/test_whitebox.py::test_validation_conditions[W10-zero-capacity] PASSED [100%]
+
+- generated xml file: /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/final-regression/results.xml -
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.10.12-final-0 _______________
+
+Name              Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------
+registration.py      58      0     26      0   100%
+-------------------------------------------------------------
+TOTAL                58      0     26      0   100%
+Coverage HTML written to dir /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/final-regression/html
+Coverage JSON written to file /home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/final-regression/coverage.json
+============================== 63 passed in 0.20s ==============================
