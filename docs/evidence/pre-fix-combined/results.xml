@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="14" skipped="0" tests="63" time="0.330" timestamp="2026-11-11T23:19:17.384271+05:00" hostname="theafrazkhan"><testcase classname="tests.test_blackbox" name="test_requirements[C01]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C02]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C03]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C04]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C05]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C06]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C07]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C08]" time="0.001"><failure message="assert False is True&#10; +  where False = check_credit_limit(17, 1)">tests/test_blackbox.py:39: in test_requirements
+    assert check_credit_limit(values['current'], values['new']) is expected
+E   assert False is True
+E    +  where False = check_credit_limit(17, 1)</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[C09]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C10]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C11]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C12]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C13]" time="0.001"><failure message="assert False is True&#10; +  where False = check_credit_limit(15, 3)">tests/test_blackbox.py:39: in test_requirements
+    assert check_credit_limit(values['current'], values['new']) is expected
+E   assert False is True
+E    +  where False = check_credit_limit(15, 3)</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[C14]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[C15]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[P01]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[P02]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[P03]" time="0.001"><failure message="AssertionError: assert True is False&#10; +  where True = prerequisites_satisfied({'CS101'}, {'CS101', 'MATH101'})&#10; +    where {'CS101'} = set(['CS101'])&#10; +    and   {'CS101', 'MATH101'} = set(['CS101', 'MATH101'])">tests/test_blackbox.py:42: in test_requirements
+    assert prerequisites_satisfied(set(values['completed']), set(values['required'])) is expected
+E   AssertionError: assert True is False
+E    +  where True = prerequisites_satisfied({'CS101'}, {'CS101', 'MATH101'})
+E    +    where {'CS101'} = set(['CS101'])
+E    +    and   {'CS101', 'MATH101'} = set(['CS101', 'MATH101'])</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[P04]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[P05]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D01]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D02]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'&#10;  &#10;  - DUES_BLOCK&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D03]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'&#10;  &#10;  - DUES_BLOCK&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D04]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D05]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D06]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D07]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D08]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'WAITLISTED'&#10;  &#10;  - WAITLISTED&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D09]" time="0.001"><failure message="AssertionError: assert 'ALREADY_REGISTERED' == 'DUES_BLOCK'&#10;  &#10;  - DUES_BLOCK&#10;  + ALREADY_REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'ALREADY_REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + ALREADY_REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D10]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D11]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D12]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D13]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D14]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D15]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'WAITLISTED'&#10;  &#10;  - WAITLISTED&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D16]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D17]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D18]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D19]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D20]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[D21]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'PREREQUISITES_MISSING'&#10;  &#10;  - PREREQUISITES_MISSING&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'PREREQUISITES_MISSING'
+E     
+E     - PREREQUISITES_MISSING
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[D22]" time="0.001"><failure message="AssertionError: assert 'CREDIT_LIMIT' == 'REGISTERED'&#10;  &#10;  - REGISTERED&#10;  + CREDIT_LIMIT">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'CREDIT_LIMIT' == 'REGISTERED'
+E     
+E     - REGISTERED
+E     + CREDIT_LIMIT</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[S01]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S02]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'WAITLISTED'&#10;  &#10;  - WAITLISTED&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[S03]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'WAITLISTED'&#10;  &#10;  - WAITLISTED&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'WAITLISTED'
+E     
+E     - WAITLISTED
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[S04]" time="0.001"><failure message="AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'&#10;  &#10;  - DUES_BLOCK&#10;  + REGISTERED">tests/test_blackbox.py:58: in test_requirements
+    assert result == expected
+E   AssertionError: assert 'REGISTERED' == 'DUES_BLOCK'
+E     
+E     - DUES_BLOCK
+E     + REGISTERED</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[S05]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S06]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S07]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S08]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S09]" time="0.001" /><testcase classname="tests.test_blackbox" name="test_requirements[S10]" time="0.002"><failure message="AssertionError: assert ({'student_id...led': 1, ...}) == ({'student_id...led': 0, ...})&#10;  &#10;  At index 1 diff: {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 1, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []} != {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 0, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []}&#10;  &#10;  Full diff: (-: missing in left side, +: extra in left side)&#10;    (&#10;        {&#10;            'student_id': 'S001',...&#10;  &#10;[+1 more line; full report in element text]">tests/test_blackbox.py:71: in test_requirements
+    assert snapshot(student, course) == after
+E   AssertionError: assert ({'student_id...led': 1, ...}) == ({'student_id...led': 0, ...})
+E     
+E     At index 1 diff: {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 1, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []} != {'code': 'CS201', 'credit_hours': 3, 'capacity': 2, 'enrolled': 0, 'prerequisites': {'MATH101', 'CS101'}, 'waitlist': []}
+E     
+E     Full diff: (-: missing in left side, +: extra in left side)
+E       (
+E           {
+E               'student_id': 'S001',...
+E     
+E     ...Full output truncated, use '-vv' to show</failure></testcase><testcase classname="tests.test_blackbox" name="test_requirements[S11]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_W01_large_dues_branch" time="0.001" /><testcase classname="tests.test_whitebox" name="test_credit_exception_propagation[W02-current-exception]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_credit_exception_propagation[W03-course-exception]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_waitlist_application_in_isolation[W04-waitlist-add]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_waitlist_application_in_isolation[W05-waitlist-existing]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_waitlist_application_in_isolation[W06-non-waitlist]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_validation_conditions[W07-valid]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_validation_conditions[W08-negative-enrollment]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_validation_conditions[W09-above-capacity]" time="0.001" /><testcase classname="tests.test_whitebox" name="test_validation_conditions[W10-zero-capacity]" time="0.001" /></testsuite></testsuites>

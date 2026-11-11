@@ -1,0 +1,36 @@
+{
+  "command": [
+    "/tmp/sqe-venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/",
+    "-v",
+    "--tb=short",
+    "--junitxml=/home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/pre-fix-combined/results.xml",
+    "--cov=registration",
+    "--cov-branch",
+    "--cov-report=term-missing",
+    "--cov-report=json:/home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/pre-fix-combined/coverage.json",
+    "--cov-report=html:/home/theafrazkhan/Desktop/assignment /SQE-Assignment-2/docs/evidence/pre-fix-combined/html"
+  ],
+  "exit_code": 1,
+  "source_commit": "7bad6883764c1a45711f7084ae2b3c80df8886a6",
+  "source_sha256": "d6c35d6804dd3bcaed3cc164ab2f163ad8214792bdc410e258ec54cdd1099100",
+  "versions": [
+    "charset-normalizer==3.5.2",
+    "coverage==7.16.2",
+    "et_xmlfile==2.0.0",
+    "exceptiongroup==1.3.1",
+    "iniconfig==2.3.1",
+    "openpyxl==3.1.5",
+    "packaging==26.3",
+    "pillow==12.3.0",
+    "pluggy==1.7.0",
+    "Pygments==2.21.0",
+    "pytest==9.2.0",
+    "pytest-cov==7.1.0",
+    "reportlab==5.1.0",
+    "tomli==2.5.0",
+    "typing_extensions==4.16.0"
+  ]
+}
